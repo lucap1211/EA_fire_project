@@ -30,7 +30,7 @@ The Monitoring Trends in Burn Severity (MTBS) dataset is a comprehensive dataset
 
 ## Analysis
 
-![Project Workflow](https://github.com/lucap1211/EA_fire_project/blob/main/graphics/workflow.png)
+![Project Workflow](https://github.com/lucap1211/EA_fire_project/blob/main/graphics/workflowbackground.png)
 
 ## Results
 Later
