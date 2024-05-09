@@ -1,44 +1,3 @@
-# Earth Analytics Final Project Repository
-## 2024 Summer
-
-For my final project I am interested in exploring the narrative text fields of the ICS-209-PLUS-WILDFIRE dataset. This repository will collect the neccessa
-
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* 
 # Earth Analytics Final Project
 ## 2024 Summer
 
@@ -49,20 +8,20 @@ How can we connect societal impacts and geophysical metrics by topic modeling me
 
 
 ## Installation
-The project will run in the public [earth-analytics-python-env](https://github.com/earthlab/earth-analytics-python-env) that contains the dependencies and libraries needed to run the project. If other libraries becomes neccessary for the project, they will be listed here as additional requirements. 
+The project will run in the public [earth-analytics-python-env](https://github.com/earthlab/earth-analytics-python-env) that contains the dependencies and libraries needed for the project. If other libraries becomes neccessary for the project, they will be listed here as additional requirements. 
 
 ## Data
 For my project, I plan to heavily focus on text-based narrative data (ICS-209-PLUS-WILDFIRES) and use geospatial data (like Monitoring Trends in Burn Severity).
 
 ### ICS-209-PLUS-WILDFIRES
 
-- [■] Standardized, on-scene Incident Status Summary
-- [■] Part of the National Incident Management System (NIMS)
-- [■] Text-based narrative wealth of data
-- [■] Science-grade situation reports focusing on large wildfires
-- [■] Daily “informational snapshots” of fire response/management
-- [■] View into the decision-making process
-    - [■] Large fire event development and response
+- Standardized, on-scene Incident Status Summary
+- Part of the National Incident Management System (NIMS)
+- Text-based narrative wealth of data
+- Science-grade situation reports focusing on large wildfires
+- Daily “informational snapshots” of fire response/management
+- View into the decision-making process
+    - Large fire event development and response
 
 ### Monitoring Trends in Burn Severity
 
@@ -71,18 +30,20 @@ The Monitoring Trends in Burn Severity (MTBS) dataset is a comprehensive dataset
 
 ## Analysis
 
+![Project Workflow](graphics\workflow.png)
 
 ## Results
-Present the results of your analysis. This could include visualizations, tables, or any other output that helps to convey your findings.
+Later
 
 ## Conclusion
-Summarize your project and its findings. Discuss any limitations or areas for future work.
+Later
 
 ## Contributors
-List the names of anyone who contributed to the project, along with their roles.
+This project will be mentored by [Lise Ann St. Denis](https://earthlab.colorado.edu/our-team/lise-ann-st-denis).
 
-## License
-Specify the license under which your project is released. If you're not sure, you can use a standard open-source license like MIT or Apache.
 
-## Contact
-Provide contact information in case someone wants to get in touch with you about your project.
+## Sources
+-   Eidenshink, J., Schwind, B., Brewer, K., Zhu, Z.L., Quayle, B. and Howard, S., 2007. A project for monitoring trends in burn severity. Fire ecology, 3, pp.3-21. 
+
+-   St. Denis, L.A., Short, K.C., McConnell, K. et al. All-hazards dataset mined from the US National Incident Management System 1999–2020. Sci Data 10, 112 (2023). [DOI](https://doi.org/10.1038/s41597-023-01955-0)
+
