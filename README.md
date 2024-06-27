@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/798408877.svg)](https://zenodo.org/doi/10.5281/zenodo.12574886)
+
 # Earth Analytics Final Project
 ## 2024 Summer
 
