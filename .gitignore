@@ -1,5 +1,7 @@
 # JupyterNotebooks
 
+data/original
+
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
