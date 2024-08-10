@@ -3,6 +3,49 @@ import os
 import pandas as pd
 
 def process_threat_data(df, collist, output_path):
+    """
+    Process and consolidate threat reporting data across multiple time frames, 
+    generating a narrative.
+
+    This function takes a DataFrame with multiple columns representing threat 
+    levels at different time frames and processes the data to create a 
+    consolidated narrative. The narrative tracks how the threat level changes 
+    over time and appends the information into a new column 
+    (`CURRENT_THREAT_NARR2`). 
+    The processed DataFrame is then saved to a CSV file.
+
+    Parameters:
+    -----------
+    df : pandas.DataFrame
+        The input DataFrame containing the threat level data to be processed. 
+        Must contain columns specified in `collist`.
+
+    collist : list of str
+        A list of column names in `df` that represent the threat levels at 
+        different time frames('CURRENT_THREAT_12', 'CURRENT_THREAT_24', etc.).
+
+    output_path : str
+        The file path where the processed DataFrame will be saved as CSV file.
+
+    Returns:
+    --------
+    None
+        The function saves the processed DataFrame to specified `output_path`.
+    
+    Example:
+    --------
+    >>> process_threat_data(
+               dfsub, 
+               ['CURRENT_THREAT_12', 'CURRENT_THREAT_24', 'CURRENT_THREAT_48'],
+                'output.csv')
+    
+    Notes:
+    ------
+    The function assumes that the columns specified in `collist` contain string
+    data and that missing values have been filled with empty strings ('').
+    """
+               
+    # Make a copy of the DataFrame to avoid modifying the original data                      
     df = df.copy()
     
     for col in collist:
