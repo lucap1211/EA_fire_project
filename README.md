@@ -13,7 +13,7 @@ How can we connect societal impacts and geophysical metrics by topic modeling me
 The project will run in an updated [earth-analytics-python-env](https://github.com/earthlab/earth-analytics-python-env). The additional library neccessary for the text processing steps is **[spaCY](https://spacy.io/usage), that is included in the updated environmnet.yml file in this repository.
 
 ## How to run the analysis
-The project followed guidelines for creating reproducible workflows. The [main notebook (dixie_caldor_text_analysis.ipynb)](dixie_caldor_text_analysis.ipynb) runs the text analysis. This workflow can run without previously running the [data processing notebook](ICS-209-PLUS-WILDFIRE_data_processing.ipynb) since the neccessary sample code is avaialble [here](data/processed/dixie-caldor-threat.csv).
+The project followed guidelines for creating reproducible workflows. The [main notebook (dixie_caldor_text_analysis.ipynb)](dixie_caldor_text_analysis.ipynb) runs the text analysis. This workflow can run without previously running the [data processing notebook](ICS-209-PLUS-WILDFIRE_data_processing.ipynb) since the neccessary sample code is available [here](data/processed/dixie-caldor-threat.csv).
 
 ## Data
 For my project, I plan to heavily focus on text-based narrative data (ICS-209-PLUS-WILDFIRES) and use geospatial data (like Monitoring Trends in Burn Severity).
