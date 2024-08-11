@@ -7493,7 +7493,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Understanding-the-Societal-Impacts-of-Large-Wildfires:-Threat-Narrative-Analysis">Understanding the Societal Impacts of Large Wildfires: Threat Narrative Analysis<a class="anchor-link" href="#Understanding-the-Societal-Impacts-of-Large-Wildfires:-Threat-Narrative-Analysis">¶</a></h2><p>Wildfires have increasingly become a significant concern across the United States. Despite only 2% of wildfires becoming significant incidents, these account for 85% of suppression costs and 95% of total acres burned annually. This project post delves into the societal impacts of large wildfires, drawing insights from ICS-209 data, which provides critical information for wildfire management.</p>
+<h2 id="Understanding-the-Societal-Impacts-of-Large-Wildfires:-Narrative-Threat-Text-Analysis">Understanding the Societal Impacts of Large Wildfires: Narrative Threat Text Analysis<a class="anchor-link" href="#Understanding-the-Societal-Impacts-of-Large-Wildfires:-Narrative-Threat-Text-Analysis">¶</a></h2><p>Wildfires have increasingly become a significant concern across the United States. Despite only 2% of wildfires becoming significant incidents, these account for 85% of suppression costs and 95% of total acres burned annually. This project post delves into the societal impacts of large wildfires, drawing insights from ICS-209 data, which provides critical information for wildfire management.</p>
 </div>
 </div>
 </div>
@@ -7521,7 +7521,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Incident-Command-System-(ICS)-and-Data-Collection">Incident Command System (ICS) and Data Collection<a class="anchor-link" href="#Incident-Command-System-(ICS)-and-Data-Collection">¶</a></h2><p>The Incident Command System (ICS) is a standardized on-scene, all-hazard incident management concept, crucial for coordinating efforts across multiple organizations during wildfires. The ICS-209 form is a key tool in this system, capturing a wide range of data, including:</p>
+<h2 id="Incident-Command-System-(ICS)-and-Data-Sources">Incident Command System (ICS) and Data Sources<a class="anchor-link" href="#Incident-Command-System-(ICS)-and-Data-Sources">¶</a></h2><p>The Incident Command System (ICS) is a standardized on-scene, all-hazard incident management concept, crucial for coordinating efforts across multiple organizations during wildfires. The ICS-209 form is a key tool in this system, capturing a wide range of data, including:</p>
 <ul>
 <li><strong>Environmental Factors</strong> (e.g., weather, fuel conditions)</li>
 <li><strong>Societal Impacts</strong> (e.g., structures threatened, evacuations)</li>
@@ -7571,6 +7571,189 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Reporting-was-the-most-frequent-during-the-highest-uncertainty--%E2%86%92-%0912-hour-threat-narratives">Reporting was the most frequent during the highest uncertainty  → 	12-hour-threat narratives<a class="anchor-link" href="#Reporting-was-the-most-frequent-during-the-highest-uncertainty--%E2%86%92-%0912-hour-threat-narratives">¶</a></h3><p>Current threat narrative fields are available for 12-, 24-, 48-, 72-, Greater-than-72-hours. Although all of these threat reporting frequencies can be relevant for different research questions, we decided to focus on the 12-hour-window. The graphs below shows that the 12-hour between reports is the most frequent period to update the reports, furthermore, the left graph also highlists that the most frequent reporting is related to lower levels of fire containment expressing uncertainty about fire management.</p>
 <p><img alt="12 hour reporting time relevance" src="../graphics/reportingtime_complex_visual.png"/></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Rich-narrative-data-available-for-large-fires">Rich narrative data available for large fires<a class="anchor-link" href="#Rich-narrative-data-available-for-large-fires">¶</a></h3><p>Named entity recognition (NER) is a subfield of artificial intelligence (AI) and a natural language processing (NLP) technique. It identifies, tags and categorizes named entities in data. In other words, named entity recognition is like teaching a computer to recognize and categorize names and labels in a body of text, much like how we naturally process and understand these elements in a conversation or a story.</p>
+<p>For the two focus fires, the 12-hour-narrative-text fields contain rich text data which is hard to interpret without further processing and using text analysis. The following graph shows the large number of available labels that can be identified for Caldor and Dixie fires.</p>
+<style>
+/* Container holding the image and the magnifier glass */
+.img-magnifier-container {
+  position: relative;
+}
+
+/* Magnifier glass */
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /* Set the size of the magnifier glass: */
+  width: 50px;  /* Smaller size */
+  height: 50px; /* Smaller size */
+}
+</style>
+<div style="display: flex; justify-content: center;">
+<div class="img-magnifier-container" style="margin: 10px;">
+<img alt="Workflow 1" id="myimage1" src="../graphics/graph_outputs/entities_per_fire.png" width="700"/>
+</div>
+<div class="img-magnifier-container" style="margin: 10px;">
+<img alt="Workflow 2" id="myimage2" src="../graphics/graph_outputs/entity_type_distribution.png" width="700"/>
+</div>
+</div>
+<script>
+function magnify(imgID, zoom) {
+  var img, glass, w, h, bw;
+  img = document.getElementById(imgID);
+
+  /* Create magnifier glass: */
+  glass = document.createElement("DIV");
+  glass.setAttribute("class", "img-magnifier-glass");
+
+  /* Insert magnifier glass: */
+  img.parentElement.insertBefore(glass, img);
+
+  /* Set background properties for the magnifier glass: */
+  glass.style.backgroundImage = "url('" + img.src + "')";
+  glass.style.backgroundRepeat = "no-repeat";
+  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  bw = 3;
+  w = glass.offsetWidth / 2;
+  h = glass.offsetHeight / 2;
+
+  /* Execute a function when someone moves the magnifier glass over the image: */
+  glass.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
+
+  /* And also for touch screens: */
+  glass.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+
+  function moveMagnifier(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    /* Prevent the magnifier glass from being positioned outside the image: */
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    /* Set the position of the magnifier glass: */
+    glass.style.left = (x - w) + "px";
+    glass.style.top = (y - h) + "px";
+    /* Display what the magnifier glass "sees": */
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+
+/* Initiate magnification only on the second image */
+magnify("myimage2", 3);
+</script>
+<div style="text-align: center;">
+<table style="margin: auto; font-size: 12px;">
+<tr>
+<th>Entity Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>GPE</td>
+<td>Countries, cities, states.</td>
+</tr>
+<tr>
+<td>ORG</td>
+<td>Companies, agencies, institutions, etc.</td>
+</tr>
+<tr>
+<td>PERSON</td>
+<td>People, including fictional.</td>
+</tr>
+<tr>
+<td>LOC</td>
+<td>Non-GPE locations, mountain ranges, bodies of water.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Communities-at-risk---Advanced-Data-Analysis">Communities at risk - Advanced Data Analysis<a class="anchor-link" href="#Communities-at-risk---Advanced-Data-Analysis">¶</a></h2><p>By leveraging Named Entity Recognition (NER) and other natural language processing techniques, we can extract valuable information from ICS-209 narrative fields. This analysis helps link geophysical fire metrics with societal impacts, providing a deeper understanding of how wildfires affect communities.</p>
+<p><img alt="alt text" src="../graphics/graph_outputs/communities_at_risk_example.png"/></p>
+<p>While more simple and limited language models failed to recognize community names, large language models (like OpenAI's GPT-3.5) was able to successfully identify communities at risk from the narrative text fields. This advancement in computing power can create a unique opportunity to gain a finer understanding of societal impacts and link narrative, text-based data with other available data for wildfires.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Large-Language-Model-Complexity">Large Language Model Complexity<a class="anchor-link" href="#Large-Language-Model-Complexity">¶</a></h3><p>To test some complexity of large language models I explored the free version of Perplexity that uses a fine-tuned model based on GPT-3.5. This model is optimized for speed and quality, specifically designed to provide quick search results and responses to user queries. The following table summarizes the output for named entities for Caldor fire across the 12-hour-threat narrative texts. The table provides an overview of different entity types which can be relevant for further exploration. For example the combination of 'Geographic features' and 'Wildlife' types can inform ecological risk, while the previously mentioned communities at risk can help researchers connect mined narrative fields to other often analyzed fields (e.x.: structures threatened).</p>
+<div style="text-align: center;">
+<img alt="Model Complexity" src="../graphics/model_complexity.png" style="width: 75%;"/>
+<p style="font-size: 15px; color: gray;">Note: The 'Companies' and 'Organizations' types are underlined in the table to suggest a repetitive entity type picked out by the LLM. Although this is not a critical problem.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Conclusion---Next-Steps">Conclusion - Next Steps<a class="anchor-link" href="#Conclusion---Next-Steps">¶</a></h2><p>Narrative reporting from ICS-209 forms offers invaluable, previously non-synthesized insights into the societal impacts of large wildfires. By analyzing these narratives with advanced natural language processing techniques like Named Entity Recognition (NER), we can better understand the intricate connections between fire hazard characteristics, management actions, and their societal effects. The case studies of the Dixie and Caldor fires demonstrate the potential of this approach to inform and improve wildfire management.</p>
+<p>Moving forward, I plan to enhance the accuracy of named entity recognition by fine-tuning models and creating customized pipelines. Additionally, building metadata to categorize threats by type will further refine our ability to link narrative data with other critical wildfire metrics, paving the way for more informed and effective fire management strategies.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h5 id="References"><strong>References</strong><a class="anchor-link" href="#References">¶</a></h5><ul>
+<li>St. Denis, L.A., Short, K.C., McConnell, K. et al. All-hazards dataset mined from the US National Incident Management System 1999–2020. Sci Data 10, 112 (2023). <a href="https://doi.org/10.1038/s41597-023-01955-0">https://doi.org/10.1038/s41597-023-01955-0</a></li>
+<li>Perplexity AI. (2023). <em>Perplexity AI: A fine-tuned model based on GPT-3.5</em>. Retrieved from <a href="https://www.perplexity.ai">https://www.perplexity.ai</a></li>
+</ul>
+<p><u><strong>The project's Gituhb repository</strong></u></p>
+<p>Luca Anna, P. (2024). <em>EA_FIRE_PROJECT</em>. GitHub. Retrieved from <a href="https://github.com/lucap1211/EA_fire_project">https://github.com/lucap1211/EA_fire_project</a></p>
 </div>
 </div>
 </div>
