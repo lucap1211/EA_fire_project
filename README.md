@@ -35,16 +35,16 @@ For my project, I plan to heavily focus on text-based narrative data [ICS-209-PL
 ## Results
 
 By leveraging Named Entity Recognition (NER) and other natural language processing techniques, we can extract valuable information from ICS-209 narrative fields. This analysis helps link geophysical fire metrics with societal impacts, providing a deeper understanding of how wildfires affect communities.
-See the 'Final blog post' files in Blog Posts folder for a detailed summart on findings illustrated by graphs and visuals from the analyses.
+See the [Final blog post](<Blog posts/Final_blog_post.ipynb>) files in Blog Posts folder for a detailed summary on findings illustrated by graphs and visuals from the analyses.
 
 ## Conclusion
 
 Narrative reporting from ICS-209 forms offers invaluable, previously non-synthesized insights into the societal impacts of large wildfires. By analyzing these narratives with advanced natural language processing techniques like Named Entity Recognition (NER), we can better understand the intricate connections between fire hazard characteristics, management actions, and their societal effects. The case studies of the Dixie and Caldor fires demonstrate the potential of this approach to inform and improve wildfire management.
 
-Moving forward, I plan to enhance the accuracy of named entity recognition by fine-tuning models and creating customized pipelines. Additionally, building metadata to categorize threats by type will further refine our ability to link narrative data with other critical wildfire metrics, paving the way for more informed and effective fire management strategies.
+Moving forward, I plan to enhance the accuracy of named entity recognition by fine-tuning models and creating customized pipelines. Additionally, building metadata to categorize threats by type will further refine our ability to link narrative data with other critical wildfire metrics.
 
 ## Contributors
-This project will be mentored by [Lise Ann St. Denis](https://earthlab.colorado.edu/our-team/lise-ann-st-denis).
+This project was mentored by [Lise Ann St. Denis](https://earthlab.colorado.edu/our-team/lise-ann-st-denis).
 
 
 ## Sources
